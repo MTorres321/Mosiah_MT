@@ -1,5 +1,5 @@
 # Mosiah_MT
-recoup-proyecto/                ← nombre del repo (ej: recoup-proyecto)
+recoup-proyecto/                ← nombre del repo (recoup-proyecto)
 ├─ README.md
 ├─ .gitignore
 ├─ requirements.txt
@@ -13,8 +13,8 @@ recoup-proyecto/                ← nombre del repo (ej: recoup-proyecto)
 # Proyecto: Sistema Recoup - Avance
 
 **Alumno:** <<Mosiah Torres>>  
-**Asignatura:** <<Arquitectura de Computadoras y Sistemas Operativos / Introducción a Redes / según corresponda>>  
-**Fecha del avance:** <<DD MMMM YYYY>>
+**Asignatura:** <<Logica de programacion>>  
+**Fecha del avance:** <<12 agosto 2025>>
 
 ## Objetivo del repositorio
 Este repositorio contiene el avance inicial para el proyecto de la clínica Recoup: preparación del ambiente, diagramas de flujo y un prototipo mínimo de código para comenzar la etapa de codificación.
@@ -77,3 +77,32 @@ if __name__ == "__main__":
         "tareas": ["Registro", "Asignar cita"]
     }
     print("Resumen ejemplo:", ejemplo_funcionalidad_1(ejemplo))
+flowchart TD
+  A[Inicio] --> B{¿Paciente registrado?}
+  B -- Sí --> C[Mostrar historial]
+  B -- No --> D[Registrar paciente]
+  D --> C
+  C --> E{¿Agendar cita?}
+  E -- Sí --> F[Seleccionar servicio]
+  F --> G[Confirmar cita]
+  E -- No --> H[Fin]
+  G --> H
+Avance de codificación - Entrega parcial
+
+1) Archivos incluidos:
+   - src/main.py (prototipo con saludo y función de ejemplo)
+   - docs/diagramas/flujo_funcionalidad_1.mmd (diagrama en Mermaid)
+   - requirements.txt
+   - README.md
+
+2) Estado:
+   - Diseño de la funcionalidad principal en diagrama.
+   - Código básico listo para ampliarse.
+   - Ambiente: Python 3.8+ sugerido.
+
+3) Pendiente:
+   - Implementar módulos de autenticación y base de datos (SQLite/PostgreSQL).
+   - Documentar VLSM / VLANs en la carpeta docs/.
+   - Subir configuración de Packet Tracer (archivo .pkt) en próximas entregas.
+
+Profesor: este repositorio contiene el primer avance solicitado. Quedo atento a comentarios.
