@@ -52,7 +52,7 @@ Ejecuta: python src/main.py
 
 from datetime import datetime
 
-def saludo_inicial(nombre="Estudiante"):
+def saludo_inicial(nombre="Mosiah Torres"):
     ahora = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     return f"Hola {nombre}, este es un prototipo inicial. Hora: {ahora}"
 
